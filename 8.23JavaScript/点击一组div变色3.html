@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>无标题文档</title>
+	</head>
+	<style type="text/css">
+		div{width: 100px;
+		 height: 100px;
+		 background: #666666;
+		 float: left;
+		 margin-right: 10px;
+		 font-size: 40px;
+		 }
+	</style>
+	<script type="text/javascript">
+		window.onload = funciton(){
+			var aDiv = document.getElementByTagName('div');
+			
+			aDiv[0].onclick = function(){
+					this.style.background = 'red';
+			}
+			aDiv[1].onclick = function(){
+				this.style.background = 'red';
+			}
+			aDiv[2].onclick = function(){
+				this.style.background = 'red';
+			}
+		}
+	</script>
+	<body>
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+	</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>无标题文档</title>
+		<style type="text/css">
+			div{
+				width: 100px;
+			   height: 100px;
+			   background: #666666;
+			   float: left;
+			   margin-right: 10px;
+			   color: #FFF;
+			   font-size: 40px;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function(){
+				var aDiv = document.getElementsByTagName('div');
+				aDiv[0].onclick = function(){
+					this.style.background = 'red';
+				}
+				var aDiv = document.getElementsByTagName('div');
+				aDiv[1].onclick = function(){
+					this.style.background = 'red';
+				}
+				var aDiv = document.getElementsByTagName('div');
+				aDiv[2].onclick = function(){
+					this.style.background = 'red';
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+	</body>
+</html>
