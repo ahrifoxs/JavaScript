@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>案例聊天框</title>
+		<style>
+			*{margin: 0 ;padding: 0;}
+			#div1{
+				width: 300px;
+				height: 300px;
+				border: 2px solid #000000;
+			}
+			#div1 p{
+				padding-left: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1"></div>
+		<input type="text" id="txt" value="" />
+		<input type="button" id="btn" value="发送" />
+	</body>
+</html>
+<script>
+	window.onload = function(){
+		var names = "老王";
+		var oDiv = document.getElementById("div1");
+		var otxt = document.getElementById("txt");
+		var oBtn = document.getElementById("btn");
+		oBtn.onclick = function(){
+		 oDiv.innerHTML =oDiv.innerHTML + "<span>"+
+		 names+"</span>"+"<p>"+otxt.value+"</p>"
+		otxt.value ="";
+		}
+	}
+</script>
+
+	
+	
+<!--	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>案例聊天框</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        #div1{
+            width: 300px;
+            height: 300px;
+            border: 2px solid #000;
+        }
+        #div1 p {
+            padding-left: 30px;
+        }
+    </style>
+</head>
+<body>
+<div id="div1"></div>
+<input type="text" id="txt" value="">
+<input type="button" id="btn" value="发送">
+</body>
+</html>
+<script>
+ window.onload = function () {
+     var names = "老王";
+     var oDiv = document.getElementById("div1");
+     var otxt = document.getElementById("txt");
+     var oBtn = document.getElementById("btn");
+     oBtn.onclick = function () {
+         //         oDiv.innerHTML = oDiv.innerHTML + otxt.value;
+         oDiv.innerHTML =oDiv.innerHTML + "<span>"+names+"</span>"+"<p>"+otxt.value+"</p>"
+        otxt.value = "";
+     }
+ }
+</script>
+-->

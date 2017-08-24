@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>改属性</title>
+	</head>
+	<body>
+		<input type="text" id="txt" value="" />
+		<input type="button" id="btn" value="弹窗" />
+	</body>
+</html>
+<script type="text/javascript">
+	var otxt = document.getElementById("txt");
+
+	var oBtn = document.getElementById("btn");
+	oBtn.onclick = function(){
+		otxt.value = oBtn.value;
+	}
+</script>
+
+
+<!--<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>改属性</title>
+	</head>
+	<body>
+		<input type="text" id="txt" value="" />
+		<input type="button" id="btn" value="弹窗" />
+	</body>
+</html>
+<script type="text/javascript">
+	var otxt = document.getElementById("txt");
+
+	var oBtn = document.getElementById("btn");
+	oBtn.onclick = function(){
+		otxt.value = oBtn.value;
+	}
+</script>-->

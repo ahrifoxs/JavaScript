@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>改图片</title>
+	</head>
+	<body>
+		<input type="text" id="txt" value=""/>
+		<input type="button" id="btn" value="确认" />
+		<img id= "img" src="img/1.jpg" width ="300px" height="300px">
+	</body>
+</html>
+<script type="text/javascript">
+	var otxt = document.getElementById("txt");
+	var oBtn = document.getElementById('btn');
+	var oImg = document.getElementById('img');
+	
+	oBtn.onclick = function(){
+		oImg.src = otxt.value
+	}
+</script>
+
+
+<!--<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>改图片</title>
+	</head>
+	<body>
+		<input type="text" id="txt" value=""/>
+		<input type="button" id="btn" value="确认" />
+		<img id= "img" src="img/1.jpg" width ="300px" height="300px">
+	</body>
+</html>
+<script type="text/javascript">
+	var otxt = document.getElementById("txt");
+	var oBtn = document.getElementById('btn');
+	var oImg = document.getElementById('img');
+	
+	oBtn.onclick = function(){
+		oImg.src = otxt.value
+	}
+</script>
+-->
