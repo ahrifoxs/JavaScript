@@ -1,0 +1,91 @@
+<!--第一次-->
+<!--<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>无标题文档</title>
+	</head>
+	<style>
+		.yellow{
+			background: yellow;
+		}
+		.green{
+			background: green;
+		}
+		.pink{
+			background: pink;
+		}
+	</style>
+	<script>
+		window.onload = function (){
+			var oBtn1 = document.getElementById('btn1');
+			var oBtn2 = document.getElementById('btn2');
+			var oBtn3 = document.getElementById('btn3');
+			var oBody = document.getElementById('body');
+			
+			oBtn1.onclick = function(){
+				oBody.className = 'yellow';
+			}
+			oBtn2.onlick = function(){
+				oBody.className = 'green';
+			}
+			oBody3.onclick = function(){
+				oBody.className = 'pink';
+			}
+		}
+	</script>
+	<body class="pink" id="body">
+         <input type="button" value="皮肤1" id="btn1"/>
+         <input type="button" value="皮肤2" id="btn2" />
+         <input type="button" value="皮肤3" id="btn3" />
+	</body>
+</html>
+-->
+	
+	<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+.yellow {
+	background: yellow;
+}
+
+.green {
+	background: green;
+}
+
+.pink {
+	background: pink;
+}
+</style>
+<script>
+window.onload = function(){
+	var oBtn1 = document.getElementById('btn1');
+	var oBtn2 = document.getElementById('btn2');
+	var oBtn3 = document.getElementById('btn3');
+	var oBody = document.body;
+	
+	oBtn1.onclick = function(){
+		oBody.className = 'yellow';	
+	}
+	
+	oBtn2.onclick = function(){
+		oBody.className = 'green';	
+	}	
+	
+	oBtn3.onclick = function(){
+		oBody.className = 'pink';	
+	}
+}
+</script>
+</head>
+
+<body class="pink">
+<input type="button" value="皮肤1" id="btn1" />
+<input type="button" value="皮肤2" id="btn2" />
+<input type="button" value="皮肤3" id="btn3" />
+</body>
+</html>
+

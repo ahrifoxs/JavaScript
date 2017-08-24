@@ -1,0 +1,21 @@
+/*第一次*/
+@charset "utf-8";
+body{
+	background: red;
+}
+
+#box {width: 200px;
+      height: 200px;
+      background: green;
+      border: yellow 10px solid ;}
+
+
+@charset "utf-8";
+body{
+	background: red;
+}
+
+#box{ width: 200px;
+      height: 200px;
+      background: green;
+      border:yellow 10px solid;}

@@ -1,0 +1,73 @@
+<!--第一次-.css->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>无标题文档</title>
+		<link rel="stylesheet" type="text/css" id="link"/>
+		<script>
+			window.onload = function (){
+				var oBtn1 = document.getElementById('btn1');
+				var oBtn2 = document.getElementById('btn2');
+				var oBtn3 = document.getElementById('btn3');
+				var oLink = document.getElementById('link');
+				
+				oBtn1.onclick = function() {
+					oLink.href = 'skin1.css';
+				}
+				oBtn2.onclick = function(){
+					oLink.href = 'skin2.css';
+				}
+				oBtn3.onclick = function (){
+					oLink.href = 'skin3.css';
+				}
+			}
+		</script>
+	</head>
+	<body>
+<input type="button"id="btn1" value="皮肤1" />
+<input type="button" id="btn2" value="皮肤2"/>
+<input type="button" id="btn3" value= "皮肤3"/>
+<div id="box">
+	
+</div>
+	</body>
+</html>
+
+<!--第二次-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>无标题文档</title>
+	<link rel="stylesheet" type="text/css" href="" id="link"/>
+	<script>
+		window.onload = function(){
+			var oBtn1 = document.getElementById('btn1');
+			var oBtn2 = document.getElementById('btn2');
+			var oBtn3 = document.getElementById('btn3');
+			var oLink = document.getElementById('link');
+		
+		oBtn1.onclick = function(){
+			oLinkhref = 'skin1.css';
+		}
+		oBtn2.onclick = function(){
+			oLinkhref = 'skin2.css';
+		}
+		oBtn3.onclick = function(){
+			oLinkhref = 'skin3.css';
+		}
+		}
+		
+	</script>
+	</head>
+	<body>
+		<input type="button" id="btn1" value="皮肤1" />
+		<input type="button" id="btn2" value="皮肤2" />
+		<input type="button" id="btn3" value="皮肤3" />
+		<div id="box"></div>
+	</body>
+</html>
+
+	
+	

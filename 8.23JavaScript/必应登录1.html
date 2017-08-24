@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>无标题文档</title>
+	<style type="text/css">
+		#box {width: 100px;
+		     height: 200px;
+		     background: red;
+		     display: none;
+		     }
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oBtn = document.getElementById('btn');
+			var oDiv = document.getElementById('box');
+			
+			oBtn.onclick = function(){
+				if(oDiv.style.display == 'block'){
+					oDiv.style.display = 'none';
+				}else{
+					oDiv.style.display = 'block';
+				}
+			}
+		}
+	</script>
+	</head>
+	<body>
+		<input type="button" name="btn" id="btn" value="登录" />
+		<div id="box"></div>
+	</body>
+</html>
+
+
+<!--第二次-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
