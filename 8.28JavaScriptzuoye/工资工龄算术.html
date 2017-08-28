@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="box">
+			<p>输入工作年份<input type="text" id="life"></p>	
+			<p>输入工资<input type="text" id="wage"></p>		
+			<button id="btn">点击我计算</button>		
+			<p id="result">结果</p>	</div>	
+			<script type="text/javascript">
+			window.onload=function(){
+				function $(id){
+					return document.getElementById(id);
+				}
+			$("btn").onclick=function(){
+				var life1=parseInt($("life").value);
+			    var wage1=parseInt($("wage").value);
+			if(life1>=5&&life1<50){
+				wage1+=wage1*0.2;}
+			else if(life1>=2&&life1<=4){
+				wage1+=wage1*0.15;}
+			else if(life1<2&&life1>=0){
+				wage1+=wage1*0.1;}
+			else{alert("输入有误");return $("result").innerHTML="请重新输入";	}
+			$("result").innerHTML=wage1;}}
+			</script>
+	</body>
+</html>
