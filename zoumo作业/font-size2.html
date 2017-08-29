@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="button" value="16" id="btn1">
+    <input type="button" value="18" id="btn2">
+    <input type="button" value="26" id="btn3">
+    <h2 id="text">蝶恋花：泪湿罗衣脂粉满</h2>
+</body>
+</html>
+<script>
+//    需求：点击按钮，字体变成相应大小；
+    /*1.获取元素*/
+    var oBtn1 = document.getElementById("btn1");
+    var oBtn2 = document.getElementById("btn2");
+    var oBtn3 = document.getElementById("btn3");
+    var oText = document.getElementById("text");
+//    2.给元素添加点击事件
+    oBtn1.onclick = function () {
+        oText.style.fontSize = 16 + "px";
+    }
+    oBtn2.onclick = function () {
+        oText.style.fontSize = 18 + "px";
+    }
+    oBtn3.onclick = function () {
+        oText.style.fontSize = 26 + "px";
+    }
+</script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="A+" id="btn1">
+<input type="button" value="A-" id="btn2">
+    <p id="text">
+        typeof操作符可以操作变量，也可以操作字面量。虽然也可以这样使用：typeof(box)，<br>但，typeof是操作符而非内置函数。PS：函数在ECMAScript中是对象，不是一种数据类型。<br>所以，使用typeof来区分function和object是非常有必要的。
+    </p>
+</body>
+</html>
+<script>
+//    需求：点击按钮，字体大小改变
+    /*1.获取元素*/
+    var oBtn1 = document.getElementById("btn1");
+    var oBtn2 = document.getElementById("btn2");
+    var oText = document.getElementById("text");
+    var num = num + 14;
+
+    /*2.给元素添加点击事件*/
+    oBtn1.onclick = function () {
+        oText.style.fontSize = num + "px";
+    }
+    oBtn2.onclick = function () {
+        oText.style.fontSize = num + "px";
+    }
+</script>
