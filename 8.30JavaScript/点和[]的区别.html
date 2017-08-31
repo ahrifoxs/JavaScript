@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+#box {
+	width: 100px;
+	height: 100px;
+	background: blue;
+}
+</style>
+<script>
+window.onload = function(){
+	var oBox = document.getElementById('box');
+
+	var a = 'width';
+	oBox.onclick = function(){
+		this.style[a] = '300px';	
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="box"></div>
+</body>
+</html>
