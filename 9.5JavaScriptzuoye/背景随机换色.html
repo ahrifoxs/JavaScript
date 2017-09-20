@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#box{width: 200px;
+			     height: 200px;
+			     background: red;}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+	</body>
+<!--	<script type="text/javascript">
+		function rgb(n,m){
+			return parseInt(Math.random() * (m-n) + n);
+		}
+		window.onload = function(){
+			var box = document.getElementById("box");
+			box.onclick = function (){
+				var r =rgb(0,256);
+				var g = rgb(0,256);
+				var b = rgb(0,256);
+				this.style.background = "rgb("+r+","+g+","+b+")";
+			}
+		}
+	</script>-->
+</html>
+<script>
+	function rgb(n,m){
+		return parseInt(Math.random() * (m-n) +n);
+	}
+	window.onload = function(){
+		var box = document.getElementById("box");
+	
+	box.onclick = function(){
+		var r = rgb(0,256);
+		var g = rgb(0,256);
+		var b = rgb(0,256);
+	this.style.background = "rgb("+r+","+g+","+b+")";	
+	}
+	}
+</script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="box">
+			
+		</div>
+	</body>
+</html>
+<script>
+	window.onload = function(){
+		var oBox = document.getElementById('box');
+		oBox.onclick = function(){
+			if(oBox.currentStyle){
+			//	alert(oBox.currentStyle){
+					if(oBox.currentStyle){
+						alert(oBox.currentStyle.width);
+						
+				}
+					else{
+						alert(getComputedStyle(oBox,false).width);
+					}
+			}
+		}
+	}
+</script>
