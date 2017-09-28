@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			ul,li{
+				margin: 0;padding: 0;
+			}
+			ul{
+				width: 800px;
+				height: 120px;
+				margin: 100px auto;
+				list-style: none ;
+			}
+			ul li{
+				padding: 0 30px;
+				float: left;
+				background: darkgoldenrod;
+				height: 120px;
+				line-height: 120px;
+				margin: 10px;
+				transition: all 0.1s;
+				transition-property: transform;
+				transition-duration: 1s;
+				transition-timing-function: linear;
+			}
+			ul li:hover{
+				transform: scale(2.3);
+				background: greenyellow;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>2</li>
+			<li>1</li>
+			<li>3</li>
+			<li>4</li>
+		</ul>
+	</body>
+</html>

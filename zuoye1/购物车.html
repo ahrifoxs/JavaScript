@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div,body,li,ul{
+				margin: 0;padding: 0;
+			}
+			ul{ 
+				margin: 0 auto;
+				width: 880px;
+				height: 200px;
+				list-style: none;
+				border: 1px solid #000000;
+				
+			}
+			li{
+				width: 200px;
+				height: 200px;
+				margin-left:20px;
+				float: left;
+			}
+			img{
+				width: 200px;
+				height: 200px;
+			}
+			#box1{
+				width: 200px;
+				height: 200px;
+				border: 1px solid #000000;
+				clear: both;
+				margin: 20px auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<ul>
+			    <li draggable="true"><img src="../9.19/8.jpg"/></li>
+			    <li draggable="true"><img src="../9.19/8.jpg"/></li>
+			    <li draggable="true"><img src="../9.19/8.jpg"/></li>
+			    <li draggable="true"><img src="../9.19/8.jpg"/></li>
+		    </ul>
+		</div>
+		<div id="box1">
+			
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	 var box=document.getElementById('box');
+	 var box1=document.getElementById('box1');
+	 var ul=box.getElementsByTagName('ul')[0];
+	 var li=ul.getElementsByTagName('li');
+	 
+	 
+	 	box1.ondragover=function(e){
+	 		e.preventDefault()
+	 	}
+	 	
+	 	box1.ondrop=function(e){
+	 		e.preventDefault();
+	 		
+	 		var a=e.dataTransfer.files;
+	 		var b=new FileReader;
+	 		b.readAsDataURL(a);
+	 		alert()
+	 	}
+	 
+	 
+</script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<video>
+		<source src="../9.20/Intermission-Walk-in_512kb.mp4" type="video/mp4"></source>
+		<source src="../9.20/Intermission-Walk-in_512kb.ogg" type="video/ogg"></source>
+		
+		当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+	</video>
+	<input type="button" id="btn1" value="播放" />
+	<input type="button" id="btn2" value="暂停" />
+	<input type="button" id="btn3" value="音量" />
+	</body>
+</html>
+<script type="text/javascript">
+	var btn1=document.getElementById('btn1');
+	var btn2=document.getElementById('btn2');
+	var btn3=document.getElementById('btn3');
+	var vid=document.querySelector('video');
+
+	
+	btn1.onclick=function(){
+	    vid.style.paly()
+	}
+</script>

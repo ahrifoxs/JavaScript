@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<canvas id="canvas" width="800" height="600"></canvas>
+	</body>
+</html>
+<script type="text/javascript">
+	var canvas=document.getElementById('canvas');
+	ctx=canvas.getContext('2d');
+	g1=ctx.createLinearGradient(400,100,400,500);
+	g1.addColorStop(0,"black");
+	g1.addColorStop(1,"white");
+	g2=ctx.createLinearGradient(400,100,400,500);
+	g2.addColorStop(0,"white");
+	g2.addColorStop(1,"black");
+	g3=ctx.createRadialGradient(400,400,1,400,400,10);
+	g3.addColorStop(0,"white");
+	g3.addColorStop(1,"black");
+	g4=ctx.createRadialGradient(400,200,1,400,200,10);
+	g4.addColorStop(0,"black");
+	g4.addColorStop(1,"white");
+	ctx.fillStyle=g1;
+	ctx.arc(400,300,200,Math.PI/2,Math.PI*1.5);
+	ctx.arc(400,200,100,Math.PI/2,Math.PI*1.5,true);
+	ctx.arc(400,400,100,Math.PI*1.5,Math.PI/2,true);
+	ctx.fill()
+	
+	ctx.beginPath();
+	ctx.fillStyle=g2;
+	
+	
+	ctx.arc(400,300,200,Math.PI/2,Math.PI*1.5,true);
+	ctx.arc(400,400,100,Math.PI/2,Math.PI*1.5);
+	ctx.arc(400,200,100,Math.PI*1.5,Math.PI/2);
+	ctx.fill()
+	
+	ctx.beginPath();
+	ctx.fillStyle=g3;
+	ctx.arc(400,400,10,0,Math.PI*2);
+	ctx.fill()
+	
+	ctx.beginPath();
+    ctx.fillStyle=g4;
+   ctx.arc(400,200,10,0,Math.PI*2);
+   ctx.fill()
+</script>

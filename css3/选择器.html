@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			input[placeholder*=请输入]{
+				height: 50px;
+				color: blue;
+			}
+			img[alt^=bb]{
+				border: 10px solid #800080;
+				width: 100px;
+				height: 100px;
+			}
+			img[alt$=e]{
+				border:10px solid #008000;}
+				img[alt$=r]{
+				border:10px solid pink;}
+			
+			img[alt*=w]{
+				border:10px solid #000000;
+			}
+			div:first-child{
+				color: #9B5A9C;
+			}
+			li:last-child{
+				color: #0000FF;
+			}
+			li:nth-child(4){
+				color: #C60C1B;
+			}
+			li:nth-child(odd){/*基数*/
+				
+			}
+			li:nth-child(even){/*偶数*/
+				
+			}
+			li:nth-child(3n+1){/*n从零开始*/
+				
+			}
+			li:nth-last-child(3){/*倒数*/
+				color: #008000; 
+			}
+			div:empty{/*空的div*/
+				border: 1px solid #F68C2F;
+				width: 100%;
+				height: 20px;
+			}
+			li:first-of-type{
+				border: 1px solid #0000FF;
+			/*	要求:他们是与其同类型同级的*/
+			}
+			li:last-of-type{
+				border: 1px solid#000000;
+			}
+			input:focus{
+				color: #800080;
+			}
+			input:enabled{
+				color: #C50934;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="text" name="txt" placeholder="请输入搜索"/>
+		<input type="keyword" name="txt" placeholder="请输入密码"/>
+		<input type="email" name="txt" placeholder="请输入邮箱地址" disabled="disabled"/>
+		<input type="button" name="btn" id="btn" value="点击提交"/>
+		<img src="../9.19/8.jpg" alt="bbq"/>
+		<img src="../9.19/8.jpg" alt="bbw"/>
+		<img src="../9.19/8.jpg" alt="bbe"/>
+		<img src="../9.19/8.jpg" alt="bbr"/>
+		
+		<ul>
+			<!--<div>儿童劫</div>-->
+			<li>貂蝉</li>
+			<li>小乔</li>
+			<li>大乔</li>
+			<li>孙尚香</li>
+			<li>亚索</li>
+		</ul>
+		
+		<ul>
+			<li>狐狸</li>
+		</ul>
+		<ul>
+			<li>艾希</li>
+		</ul>
+		
+		<div></div>
+		<div><p>刀锋意志</p></div>
+	</body>
+</html>

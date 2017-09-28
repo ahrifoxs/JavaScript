@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			ul,li{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				font-size: 0;
+			}
+			ul{
+				width: 800px;
+				height: 200px;
+				border: 1px solid#CCCCCC;
+				margin: 200px auto;
+			}
+			ul li{
+				width: 200px;
+				height: 100%;
+				display: inline-block;
+				border: 1px solid #000000;
+				box-sizing: border-box;
+				text-align: center;
+				line-height: 200px;
+				position: relative;
+			
+			}
+			img{
+				width: 90%;
+				height: 90%;
+					margin-top: 10px;
+					transition: all 1s;
+			}
+			li:nth-child(1) img{
+				transform: rotate(20deg);
+			}
+			li:nth-child(2) img{
+				transform: rotate(-20deg);
+			}
+			li:nth-child(3) img{
+				transform: rotate(50deg);
+			}
+			li:nth-child(4) img{
+				transform: rotate(-30deg);
+			}
+			li:hover img{
+				transform: scale(1.5);
+				
+			}
+			li:hover{
+				z-index: 2;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><img src="../9.19/8.jpg" alt="" /></li>
+			<li><img src="../9.19/8.jpg" alt="" /></li>
+			<li><img src="../9.19/8.jpg" alt="" /></li>
+			<li><img src="../9.19/8.jpg" alt="" /></li>
+		</ul>
+	</body>
+</html>

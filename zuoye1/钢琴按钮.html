@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			ul{
+				list-style: none;
+				width: 700px;
+				height: 150px;
+				text-align: center;
+				margin: 20px auto;
+				
+			}
+			ul li{
+				float: left;
+				width: 80px;
+				height: 150px;
+				border:1px solid #000000;
+				/*transition: all 0.5s linear 0.1s; */
+				
+				transition-property: transform;
+				transition-duration: 0.5s;
+				transition-timing-function: linear;
+			}
+			ul li:hover{
+				transform: scale(0.95);
+			}
+			ul li:nth-child(2n+1){
+				background: #000000;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</body>
+</html>

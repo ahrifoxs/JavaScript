@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 100px;
+				height: 100px;
+				background: #000000;
+				animation: a 5s, 100ms;
+			}
+			div:nth-of-type(1){
+				animation-timing-function: ease;
+				animation-iteration-count: 1;
+				
+			}
+			div:nth-of-type(2){
+				animation-timing-function:  ease-in;
+				animation-iteration-count:  initial;
+				
+			}
+			div:nth-of-type(3){
+				animation-timing-function:  ease-in-out;
+				animation-iteration-count:  inherit;
+				
+			}
+			div:nth-of-type(4){
+				animation-timing-function:  ease-out;
+				animation-iteration-count:  infinite;
+				animation-direction: alternate;
+				
+			}
+			div:nth-of-type(5){
+				animation-timing-function:  linear;
+				animation-iteration-count:  infinite;
+				
+			}
+			@keyframes a{
+				from{margin-left: 0px;}
+				to{margin-left: 600px;}
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</body>
+</html>

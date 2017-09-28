@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#box{
+				text-shadow: 3px 5px 7px red;
+				           /*  X    Y   模糊系数;字体颜色*/
+				/*font-size: 50px;*/
+				/*overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;*/
+				border: 1px solid #5C5C5C;
+				width: 300px;
+				height: 80px;
+				/*-webkit-text-stroke: 5px greenyellow;*/
+				font-size-adjust: 0.52;/*aspect:字体小写X的高度除以该字体的大小每种字体的aspect值是固定的*//*微调字体*/
+      			@font-face{
+      				
+      			}
+      			}
+      			p{
+      				color: hsla(320,50%,50%,1);
+      				color: transparent;/*透明色*/
+      				background: transparent;/*透明背景*/
+      				border-image: url(../9.19/8.jpg) 20/40px round;
+      			}
+      			#box1{
+      				box-sizing: border-box;padding: 50px;
+      				
+      				width: 500px;
+      				height: 500px;
+      				border: 10px solid #000000;
+      				/*background: url(../9.19/8.jpg)no-repeat left bottom,url(../9.19/wifi.png)no-repeat right top;
+      				background-size:100px 100px ;
+      				background-size:50% 50% ; 
+      				background-size: 100% 100%;  */        
+      				/*background-image: url("../9.19/8.jpg"),url("../9.19/wifi.png");
+      				background-repeat: no-repeat,no-repeat;
+      				background: left bottom,right top;*/
+      			}
+      			
+      			/*css颜色:
+      			red  
+      			#add
+      			rgba(2,2,2,透明度(0-1))
+      			hsl()色轮模式hsla()
+      			h:hue色调   0-360
+      			s:staturation饱和度   0-100%
+      			l:lightness亮度   0-100%
+      			a:alpha透明度   0-1
+      			*/
+      			img{
+      				
+      				border-radius: 50%;
+      			}
+      			#box2{
+      				width: 200px;
+      				height: 200px;
+      				border: 1px solid #CCCCCC;
+      				resize: both;
+      				overflow: auto;
+      				box-shadow: 10px 10px 10px 10px yellow,10px 10px 10px 20px red,10px 10px 10px 40px black;
+      				      			}
+		</style>
+	</head>
+	<body>
+		<div id="box2">
+		<!--	我的的的 打打辅导费
+			<p>dffdffewfoijoifij</p>-->
+			<!--<img src="../9.19/8.jpg"/>-->
+		</div>
+		<div id="box1">
+			
+		</div>
+		
+	</body>
+</html>
+
+<!--
+1.hover选择器
+2.颜色
+css颜色:
+      			red  
+      			#add
+      			rgba(2,2,2,透明度(0-1))
+      			hsl()色轮模式hsla()
+      			h:hue色调   0-360
+      			s:staturation饱和度   0-100%
+      			l:lightness亮度   0-100%
+      			a:alpha透明度   0-1
+
+3.引入字体
+@font-face{
+	font-family:"zhangsan";
+	src:url(字体库路径) format('TrueType')
+}
+
+
+4.背景图
+         多张图片用逗号隔开
+         先添加的图片盖住后添加的图片
+        设置背景图的大小  (四种写法) ： 
+                    background-size:100px 100px ;
+      				background-size:50% 50% ; 
+      				background-size: 100% 100%; 
+                    background-size:auto 100%;(auto等比拉伸)
+                    background-size: contain;等比拉伸，至高度相等后不管宽度，或者相反
+                    background-size: cover;自动拉伸，宽度和高度都充满整个元素
+    
+background-origin:content-box只覆盖内容区
+                   border-box从边框区开始覆盖
+                  padding-box从内边距开始覆盖
+
+
+5.边框
+border-radius：50%；
+
+图片背景边框
+border-image-source：url（）图片边框
+border-image-slice: 3；如何切割边框（4个值，数字或百分比，没有单位）
+border-image-width:120px；图片边框的宽度
+border-image-repeat:stretch（横向拉伸平铺）/round（纵向取整平铺）            覆盖方式
+border-image：url() 23/24px round;   缩写
+
+min-width   max-width
+box-sizing:border-box;(不会因为border和padding的变化而改变盒子的大小) 指定盒子的尺寸
+resize：none（不允许拖动）/
+        both（宽高都能拖动）/
+        horizontal/（只改变宽，不改变高）
+        vertical/（只改变高，不改变宽）
+        是否允许用户通过拖动改变组件的大小（要加overflow：auto）
+        
+box-shadow盒子阴影
+box-shadow: 10px 10px 10px 10px yellow;(水平   垂直   模糊度   缩放度    阴影颜色【分别对应相应的值】)
+text-shadow:2px 2px 2px 2px blue；也可以用多个值来写，突出渐变效果
+
+
+6.分栏
+column-count：3；（想分多少栏就写多少）栏目数
+column-width：200px；栏目宽
+指定的栏目数和宽度都不是绝对的，
+不同浏览器兼容不一样，
+当分栏内容所在容器的宽度大于栏目数*栏目宽度加上间距，
+有的浏览器会增加栏目宽度，
+有的浏览器会增加栏目数
+
+column-rule：2px dotted red;
+各栏目之间的分隔条
+column-gap：100px；
+各栏目之间的距离
+
+
+7.媒体查询
+@media (min-width:768px){
+				div{
+					background: yellow
+				}
+			}
+8.css3的变形效果
+tranform
+rotate(角度)顺时针转过的角度
+translate（横向px，纵向px）
+translateX（30px）横向平移
+translateY（30px）纵向平移
+skew(角度)（可以放两个值）
+scale（0.2,0.3）
+transform：rotate（），scale（），translate(),skew()
+
+
+
+
+9.css3动画
+transition-property: transform;指定发生变化的属性
+transition-duration:1s;持续的时间
+transition-timing-function:linear;
+transition-delay：1s ；延迟时间
+transition：对象  持续时间  速度   延迟    //缩写
+animation动画
+animation：spot 3s linear 0s infinite alternate
+
+
+animation-name:a ;动画名称
+animation-duration：2s；动画持续时间
+animation-timing-function：east-out；变化速度
+animation-delay：1s；动画的延迟时间
+animation-iteration-count：infinite；循环无限次
+animation-direction：alternate  //动画往返 
+
+animation-fill-mode://第一帧或者最后一帧的状态
+                    none默认状态
+                    both  (开始和结束都是改变后的状态)
+                    forwards（动画结束后显示最后一帧的样式）
+                    backwards动画等待时显示第一帧的样式
+                    
+     
+
+3D动画
+transform-style：preserve-3d ;展现方式为3D，加在父元素上
+透视属性：perspective：500px距离物体距离    近大远小
+注意点：透视属性必须要添加到需要呈现近大远小的父元素上
+rotate旋转后，轴向发生变化，所以做立方体的时候，如果是先旋转后平移，就要沿着Z轴平移
+
+注意点：动画中如果有和默认样式中同名的属性，会覆盖默认样式中同名样式
+               在编写动画时，固定不变的值写在前面，需要改变的值写在后边
+
+定义动画
+	@keyframes a{
+				from{margin-left: 0px;}
+				to{margin-left: 600px;}
+			}
+
+linear匀速
+ease慢到快到慢
+ease-in慢到快
+ease-in-out慢到快到慢
+ease-out快到慢
+transition-delay：2s  延迟时间
+
+
+10.网页练习-->

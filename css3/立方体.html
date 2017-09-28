@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			ul,li{
+				margin: 0;padding: 0;
+			}
+			ul{
+				width: 200px;
+				height: 200px;
+				margin: 200px auto;
+				/*border: 1px solid#000000;*/
+				list-style: none ;
+				position: relative;
+				transform-style:preserve-3d ;
+				transform: rotateX(0deg) rotateY(0deg);
+				
+			}
+			ul li{
+				font-size: 60px;
+				text-align: center;
+				line-height: 200px;
+				color: #FFF0DB;
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				
+				
+			}
+			li img{
+				width: 200px;
+				height: 200px;
+			}
+			li:nth-of-type(1){
+				background: red;
+				transform: translateX(-100px) rotateY(90deg);
+				
+			}
+			li:nth-of-type(2){
+				background: blue;
+				transform: translateY(-100px) rotateX(90deg);
+			}
+			li:nth-of-type(3){
+				background: green;
+				transform: translateX(100px) rotateY(-90deg);
+			}
+			li:nth-of-type(4){
+				background: orange;
+				transform: translateY(100px) rotateX(-90deg);
+			}
+			li:nth-of-type(5){
+				background: #800080;
+				transform: translateZ(-100px)
+			}
+			li:nth-of-type(6){
+				background: pink;
+				transform: translateZ(100px);
+				
+			}
+			
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><img src="../9.19/8.jpg"/></li>
+		<li><img src="../9.19/8.jpg"/></li>
+		<li><img src="../9.19/8.jpg"/></li>
+		<li><img src="../9.19/8.jpg"/></li>
+		<li><img src="../9.19/8.jpg"/></li>
+		<li><img src="../9.19/8.jpg"/></li>
+		</ul>
+		
+	</body>
+</html>
+<script type="text/javascript">
+	var ul=document.getElementsByTagName('ul')[0];
+	var i=0;
+	setInterval(function(){
+		   i++;
+		   ul.style.transform="rotateY("+i+"deg)"+"rotateX("+parseInt(i+10)+"deg)"
+	},100)
+</script>
