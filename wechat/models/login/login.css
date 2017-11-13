@@ -1,0 +1,14 @@
+.mui-content-padded{
+	   margin-top: 25px;
+       margin-bottom: 25px;
+       }
+.mui-text-center a{color:#aebac7}
+.mui-btn{padding: 10px;}
+body{background: #FFFFFF;}
+.mui-input-group:before,.mui-input-group:after{
+	height: 0;
+}
+
+.mui-input-row label{
+	font-weight: 600;
+}

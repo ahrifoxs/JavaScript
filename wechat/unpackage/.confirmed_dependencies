@@ -1,0 +1,69 @@
+{
+  "models/login/login.html": {
+    "resources": [
+      "models/login/login.css",
+      "models/login/login.js",
+      "common/mui.min.js",
+      "common/mui.min.css",
+      "common/fonts/mui.ttf"
+    ],
+    "refer": [
+      "main/main.html"
+    ]
+  },
+  "main/main.html": {
+    "resources": [
+      "common/fonts/mui.ttf",
+      "common/mui.min.js",
+      "common/mui.min.css"
+    ],
+    "refer": []
+  },
+  "message/message.html": {
+    "resources": [
+      "common/mui.min.js",
+      "message/message.css",
+      "message/message.js",
+      "common/mui.min.css"
+    ],
+    "refer": []
+  },
+  "models/message/message.html": {
+    "resources": [
+      "models/message/message.js",
+      "models/message/message.css",
+      "common/mui.min.js",
+      "common/mui.min.css",
+      "models/main/main.js",
+      "common/fonts/mui.ttf",
+      "img/7dca271cb2b177f5cfb1621397b81645e64ba0a1.jpg"
+    ],
+    "refer": []
+  },
+  "models/main/main.html": {
+    "resources": [
+      "models/main/main.js",
+      "common/fonts/mui.ttf",
+      "common/mui.min.js",
+      "common/mui.min.css",
+      "models/address-book/address-book.html"
+    ],
+    "refer": [
+      "models/message/message.html",
+      "models/address-book/address-book.html",
+      "models/discover/discover.html"
+    ]
+  },
+  "models/address-book/address-book.html": {
+    "resources": [
+      "models/address-book/address-book.js",
+      "models/address-book/address-book.css"
+    ]
+  },
+  "models/discover/discover.html": {
+    "resources": [
+      "models/discover/discover.js",
+      "models/discover/discover.css"
+    ]
+  }
+}
