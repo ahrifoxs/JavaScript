@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>v-for的使用</title>
+		<style type="text/css">
+			.active{
+				background: orangered;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			  <p v-for='(p,index) in college' :class="index===activeindex? 'active':''">
+			  	{{p}}
+			  </p>
+		</div>
+		
+	</body>
+
+  <script src="../js/vue.js"></script>
+</html>
+<script type="text/javascript">
+    new Vue({
+    	el : "#box",
+    	data:{
+    		college:[
+    		'java学院',
+    		'HTML5学院',
+    		'JAVASCRIPT学院',
+    		'CSS学院',
+    		'JSON学院'
+    		],
+    		
+    		activeindex:2
+    	}
+    })
+</script>
