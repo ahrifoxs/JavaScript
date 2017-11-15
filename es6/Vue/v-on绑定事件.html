@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>v-for的使用</title>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<p :style="{color:fontcolor}">{{msg}}</p>
+			
+			<button @click="changeContent()">点击改变数据</button>
+		</div>
+	</body>
+
+  <script src="../js/vue.js"></script>
+</html>
+<script type="text/javascript">
+		new Vue({
+			el:"#box",
+			data:{
+				msg:"你的名字",
+				fontcolor:"red"
+			},
+			methods:{
+				changeContent(){
+					this.msg="我可怜的名字",
+					this.fontcolor="green"
+				}
+				
+			}
+			
+		})
+	</script>
