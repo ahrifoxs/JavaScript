@@ -5,5 +5,56 @@
 		<title></title>
 	</head>
 	<body>
+		<div id="app">
+			<parent></parent>
+			<child></child>
+		</div>
 	</body>
+	<script src="../js/vue.js"></script>
 </html>
+<script type="text/javascript">
+
+
+
+	//1.  子组件构造器
+	let child1 = Vue.extend({
+		template:`
+		<img src="../img/7dca271cb2b177f5cfb1621397b81645e64ba0a1.jpg" width="200"/>
+		`
+	});
+	let child2 = Vue.extend({
+		template:`
+		<div>
+		<p>我认为自己很美</p>
+		<img src="../img/欢迎来到.jpg" width="200"/>
+		</div>
+		`
+	});
+	
+	//父组件构造器放在子组件构造器的的下边
+	Vue.component('child',child1);
+	//2.父组件构造器
+	Vue.component('parent',{
+	    components:{
+	    	'my-child1':child1,
+	    	'my-child2':child2,
+	    },
+	    template:`
+	    <div>
+	    <my-child1></my-child1>
+	    <my-child2></my-child2>
+	    </div>
+	    `
+	})
+	
+	
+	
+	
+	new Vue({
+		el:"#app",
+		data:{
+			msg : '今天的天气很好！'
+		}
+	})
+	
+</script>

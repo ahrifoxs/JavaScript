@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="app">
+	<my-div></my-div>
+			
+		</div>
+		<template id="my_div">
+				<div>
+				<div>我是MT！</div>
+				<input type="date" name="" id="" value="" />
+				<img src="../img/7dca271cb2b177f5cfb1621397b81645e64ba0a1.jpg"/>
+				</div>
+				
+			</template>
+	</body>
+	<script src="../js/vue.js"></script>
+</html>
+     <script type="text/javascript">
+     	//1.实例化组件
+     	Vue.component('my-div',{
+     		template:'#my_div'
+     	})
+     	new Vue({
+     		el:"#app",
+     	})
+     </script>

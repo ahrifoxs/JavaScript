@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="app">
+			<my-div message="今天开始下雨了" imgsrc="../img/7dca271cb2b177f5cfb1621397b81645e64ba0a1.jpg"></my-div>
+			<my-div message="今天开始下冰雹了" imgsrc="../img/欢迎来到.jpg"></my-div>
+		</div>
+		<template id="my_div">
+			<div>
+				<h1>{{message}}</h1>
+				<img :src="imgsrc" width="200"/>
+			</div>
+		</template>
+	</body>
+	<script src="../js/vue.js"></script>
+</html>
+<script type="text/javascript">
+	//1.创建组件
+	Vue.component('my-div',{
+		template:'#my_div',
+		props:['message','imgsrc']
+	})
+	
+	
+	
+	
+	new Vue({
+		el:"#app",
+	})
+</script>
