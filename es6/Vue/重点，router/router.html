@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css"/>
+	</head>
+	<style type="text/css">
+		body{
+			background: #e8e8e8;
+		}
+	</style>
+	<body>
+		<div id="app">
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2">
+					<div class="page-header">
+						<h1>IT66教育</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-2 col-xs-offset-2">
+					<div class="list-group">
+						 <!-- 使用 router-link 组件来导航. -->
+                         <!-- 通过传入 `to` 属性指定链接. -->
+                         <!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
+                         <router-link class='list-group-item' to="/h5">HTML5学院</router-link>
+                         <router-link class='list-group-item' to="/java">JAVA学院</router-link>
+                         <router-link class='list-group-item' to="/python">PYTHON学院</router-link>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="panel">
+						<div class="panel-body">
+							 <!-- 路由出口 -->
+                             <!-- 路由匹配到的组件将渲染在这里 -->
+                             <router-view></router-view>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<template id="h5">
+			<div>
+				<h2>HTML5学院</h2>
+				<p>掌握面向未来的神技！</p>
+				<img src="../../img/欢迎来到.jpg"/ width="250">
+			</div>
+		</template>
+		<template id="java">
+			<div>
+				<h2>JAVA学院</h2>
+				<p>都说Java是世界上最好的语言！</p>
+				<img src="../../img/7dca271cb2b177f5cfb1621397b81645e64ba0a1.jpg"/ width="250">
+			</div>
+		</template>
+		<template id="python">
+			<div>
+				<h2>PYTHON学院</h2>
+				<p>抄的好火热啊！</p>
+				<img src="../../img/欢迎来到.jpg"/ width="250">
+			</div>
+		</template>
+	</body>
+	<script src="../../js/vue.js"></script>
+	<script src="../../js/vue-router.js"></script>
+</html>
+<script type="text/javascript">
+
+// 1.创建组件
+  const Html5=Vue.extend({
+  	template:"#h5"
+  	
+  })
+  const Java=Vue.extend({
+  	template:"#java"
+  	
+  })
+  const Python=Vue.extend({
+  	template:"#python"
+  	
+  })
+
+
+//  2.定义路由
+
+     const routes = [
+     {path:'/h5',component:Html5},
+     {path:'/java',component:Java},
+     {path:'/python',component:Python},
+     //配置根路由
+    {path:'/',redirect:'/h5'}
+     ]
+
+//   3.创建路由的实例
+
+   const router = new VueRouter({
+   	      routes:routes
+   })
+  
+  
+  //创建Vue的实例并挂载
+  
+      new Vue({
+      	router:router
+      }).$mount('#app')
+
+</script>
