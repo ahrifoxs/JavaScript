@@ -1,0 +1,48 @@
+.padding_logo{
+	padding-top: 7px;
+}
+.carousel-img img{
+	margin: 0 auto;
+}
+.carousel-img .item {
+	background:black;
+}
+.tab-1 h2{
+	font-size:20px;
+	color: #0059b2;
+	text-spacing: 1px;
+}
+.tab-1 p{
+	font-size:15px;
+	color: #999;
+	text-spacing: 1px;
+}
+.media{
+	padding-top: 20px;
+}
+.media-heading{
+	margin: 5px 0 20px 0px;
+}
+.media img{
+	 width: 220px;
+	 height: 146px;
+}
+.media .media-body{
+	text-align: left;
+}
+.row{
+	margin: 10px;
+}
+.pic_shuoming img{
+	width: 70%;
+}
+.bg-color{
+	background: #C0C0C0;
+}
+.pic_shuoming .row{
+	padding: 40px 0;
+}
+.footer{
+	padding: 30px;
+	background: #C0C0C0;
+}
